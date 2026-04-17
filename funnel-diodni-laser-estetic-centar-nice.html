@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trajno uklanjanje dlačica | Estetic Centar Nice</title>
+<meta name="description" content="Diodni laser za trajno uklanjanje dlačica cijelog tijela. 6 tretmana. Najbolje ocijenjeni estetski centar u Zagrebu. Besplatne konzultacije.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+<style>
+  /* ============ RESET & BASE ============ */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: #0d0b0d;
+    color: #e8e4e0;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  img { max-width: 100%; display: block; }
+  a { text-decoration: none; color: inherit; }
+
+  /* ============ UTILITY ============ */
+  .container { max-width: 680px; margin: 0 auto; padding: 0 20px; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+  .text-center { text-align: center; }
+
+  /* ============ ANNOUNCEMENT BAR ============ */
+  .announcement {
+    background: linear-gradient(90deg, #8a4060, #c46e8e, #8a4060);
+    color: #fff;
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    animation: shimmer 3s ease-in-out infinite;
+  }
+  @keyframes shimmer {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  .announcement span { opacity: 0.85; }
+
+  /* ============ HERO ============ */
+  .hero {
+    padding: 48px 0 40px;
+    text-align: center;
+    position: relative;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #2a2229, transparent);
+  }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(212, 115, 138, 0.1);
+    border: 1px solid rgba(212, 115, 138, 0.25);
+    border-radius: 100px;
+    padding: 6px 16px;
+    font-size: 12px;
+    color: #d4738a;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .hero-badge svg { width: 14px; height: 14px; fill: #d4738a; }
+  .hero h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(28px, 6vw, 42px);
+    font-weight: 700;
+    line-height: 1.15;
+    color: #fff;
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: #d4738a;
+  }
+  .hero-sub {
+    font-size: 17px;
+    color: #9a9498;
+    max-width: 480px;
+    margin: 0 auto 24px;
+    line-height: 1.65;
+  }
+  .hero-sub strong { color: #e8e4e0; font-weight: 600; }
+
+  /* ============ PRICING CARD ============ */
+  .price-card {
+    background: linear-gradient(135deg, #1a1519 0%, #141214 100%);
+    border: 1px solid #2a2229;
+    border-radius: 16px;
+    padding: 28px 24px;
+    margin: 0 auto 0;
+    max-width: 420px;
+    text-align: center;
+  }
+  .price-card .treatment-name {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #777;
+    margin-bottom: 12px;
+  }
+  .price-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 6px;
+  }
+  .price-old {
+    font-size: 22px;
+    color: #666;
+    text-decoration: line-through;
+    font-weight: 400;
+  }
+  .price-new {
+    font-size: 48px;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: -2px;
+    line-height: 1;
+  }
+  .price-new span { font-size: 24px; font-weight: 500; color: #999; }
+  .price-detail {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+  }
+  .price-detail strong { color: #d4738a; }
+  .price-includes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  .price-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: rgba(212, 115, 138, 0.08);
+    border: 1px solid rgba(212, 115, 138, 0.15);
+    border-radius: 100px;
+    padding: 5px 12px;
+    font-size: 12px;
+    color: #d4738a;
+  }
+  .price-tag svg { width: 12px; height: 12px; }
+
+  /* ============ CTA BUTTON ============ */
+  .cta-wrap { padding: 28px 0 0; text-align: center; }
+  .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #d4738a, #b85670);
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 16px 40px;
+    border-radius: 60px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    width: 100%;
+    max-width: 380px;
+    letter-spacing: 0.3px;
+    box-shadow: 0 4px 24px rgba(212, 115, 138, 0.25);
+  }
+  .cta-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 32px rgba(212, 115, 138, 0.35);
+    background: linear-gradient(135deg, #e08aa0, #c4697f);
+  }
+  .cta-btn svg { width: 18px; height: 18px; }
+  .cta-micro {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+  }
+  .cta-micro svg { width: 12px; height: 12px; vertical-align: -2px; fill: #22c55e; }
+
+  /* ============ SECTION DIVIDERS ============ */
+  .section-divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #2a2229 30%, #2a2229 70%, transparent);
+    margin: 48px 0;
+  }
+
+  /* ============ SOCIAL PROOF BAR ============ */
+  .proof-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding: 24px 0;
+  }
+  .proof-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #999;
+  }
+  .proof-item strong { color: #e8e4e0; font-weight: 600; }
+  .proof-item svg { width: 16px; height: 16px; }
+  .stars { color: #d4738a; font-size: 14px; letter-spacing: 1px; }
+
+  /* ============ BENEFITS ============ */
+  .benefits { padding: 8px 0; }
+  .benefits-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 8px;
+    color: #fff;
+  }
+  .benefits-sub {
+    text-align: center;
+    font-size: 15px;
+    color: #777;
+    margin-bottom: 32px;
+  }
+  .benefit-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  @media (max-width: 480px) { .benefit-grid { grid-template-columns: 1fr; } }
+  .benefit-card {
+    background: #141214;
+    border: 1px solid #1e1c1f;
+    border-radius: 12px;
+    padding: 20px;
+    transition: border-color 0.2s;
+  }
+  .benefit-card:hover { border-color: #2a2229; }
+  .benefit-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    font-size: 18px;
+  }
+  .benefit-card h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #e8e4e0;
+  }
+  .benefit-card p {
+    font-size: 13px;
+    color: #777;
+    line-height: 1.5;
+  }
+
+  /* ============ HOW IT WORKS ============ */
+  .how-it-works { padding: 8px 0; }
+  .how-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 32px;
+    color: #fff;
+  }
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+  }
+  .step {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  .step-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    flex-shrink: 0;
+  }
+  .step-num {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(212, 115, 138, 0.12);
+    border: 1px solid rgba(212, 115, 138, 0.3);
+    color: #d4738a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+  .step-connector {
+    width: 1px;
+    flex: 1;
+    background: linear-gradient(to bottom, rgba(212, 115, 138, 0.2), transparent);
+    min-height: 20px;
+  }
+  .step-content h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #e8e4e0;
+    margin-bottom: 4px;
+  }
+  .step-content p {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.6;
+  }
+
+  /* ============ COMPARISON ============ */
+  .comparison { padding: 8px 0; }
+  .comp-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 32px;
+    color: #fff;
+  }
+  .comp-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  .comp-table thead th {
+    padding: 14px 16px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #666;
+    font-weight: 600;
+    text-align: left;
+    border-bottom: 1px solid #1e1c1f;
+  }
+  .comp-table thead th:nth-child(2) { color: #d4738a; text-align: center; }
+  .comp-table thead th:nth-child(3) { text-align: center; }
+  .comp-table thead th:nth-child(4) { text-align: center; }
+  .comp-table tbody td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #111;
+    color: #999;
+  }
+  .comp-table tbody td:first-child { color: #bbb; font-weight: 500; }
+  .comp-table tbody td:nth-child(2) { text-align: center; }
+  .comp-table tbody td:nth-child(3) { text-align: center; }
+  .comp-table tbody td:nth-child(4) { text-align: center; }
+  .check { color: #d4738a; font-weight: 700; }
+  .x { color: #ff4444; opacity: 0.6; }
+  .mid { color: #888; }
+  @media (max-width: 500px) {
+    .comp-table { font-size: 12px; }
+    .comp-table thead th, .comp-table tbody td { padding: 10px 8px; }
+  }
+
+  /* ============ TESTIMONIALS ============ */
+  .testimonials { padding: 8px 0; }
+  .test-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 32px;
+    color: #fff;
+  }
+  .test-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .test-card {
+    background: #141214;
+    border: 1px solid #1e1c1f;
+    border-radius: 12px;
+    padding: 22px;
+  }
+  .test-stars { color: #d4738a; font-size: 13px; letter-spacing: 1px; margin-bottom: 10px; }
+  .test-text {
+    font-size: 15px;
+    color: #bbb;
+    line-height: 1.65;
+    margin-bottom: 12px;
+    font-style: italic;
+  }
+  .test-author {
+    font-size: 13px;
+    color: #666;
+  }
+  .test-author strong { color: #999; font-weight: 600; }
+
+  /* ============ FAQ ============ */
+  .faq { padding: 8px 0; }
+  .faq-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 32px;
+    color: #fff;
+  }
+  .faq-item {
+    border-bottom: 1px solid #1a181b;
+    padding: 20px 0;
+  }
+  .faq-item:first-child { border-top: 1px solid #1a181b; }
+  .faq-q {
+    font-size: 15px;
+    font-weight: 600;
+    color: #e8e4e0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+  .faq-q::after {
+    content: '+';
+    font-size: 20px;
+    color: #555;
+    flex-shrink: 0;
+    transition: transform 0.2s;
+  }
+  .faq-item.open .faq-q::after {
+    content: '−';
+    color: #d4738a;
+  }
+  .faq-a {
+    font-size: 14px;
+    color: #888;
+    line-height: 1.7;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding-top: 0;
+  }
+  .faq-item.open .faq-a {
+    max-height: 300px;
+    padding-top: 12px;
+  }
+
+  /* ============ GUARANTEE ============ */
+  .guarantee {
+    background: linear-gradient(135deg, #141214, #181618);
+    border: 1px solid #2a2229;
+    border-radius: 16px;
+    padding: 28px 24px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 500px;
+  }
+  .guarantee-icon { font-size: 36px; margin-bottom: 12px; }
+  .guarantee h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+  .guarantee p {
+    font-size: 14px;
+    color: #888;
+    line-height: 1.65;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  /* ============ FINAL CTA ============ */
+  .final-cta {
+    text-align: center;
+    padding: 48px 0 56px;
+  }
+  .final-cta h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(24px, 5vw, 32px);
+    color: #fff;
+    margin-bottom: 8px;
+  }
+  .final-cta h2 em { font-style: italic; color: #d4738a; }
+  .final-cta p {
+    font-size: 15px;
+    color: #777;
+    margin-bottom: 28px;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+
+  /* ============ FOOTER ============ */
+  .footer {
+    border-top: 1px solid #1a181b;
+    padding: 28px 0;
+    text-align: center;
+  }
+  .footer-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: #999;
+    margin-bottom: 6px;
+  }
+  .footer-info {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.8;
+  }
+  .footer-info a { color: #888; }
+  .footer-info a:hover { color: #d4738a; }
+
+  /* ============ STICKY CTA (MOBILE) ============ */
+  .sticky-cta {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(12, 11, 13, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid #2a2229;
+    padding: 12px 16px;
+    z-index: 100;
+  }
+  .sticky-cta .cta-btn {
+    width: 100%;
+    max-width: 100%;
+    padding: 14px 24px;
+    font-size: 15px;
+  }
+  @media (max-width: 768px) {
+    .sticky-cta { display: block; }
+    .final-cta { padding-bottom: 100px; }
+  }
+
+  /* ============ MOBILE OPTIMIZATIONS ============ */
+  @media (max-width: 600px) {
+
+    /* Base spacing */
+    .container { padding: 0 16px; }
+    .section-divider { margin: 32px 0; }
+
+    /* Announcement bar */
+    .announcement { font-size: 11px; padding: 9px 12px; }
+
+    /* Hero */
+    .hero { padding: 32px 0 28px; }
+    .hero-badge { font-size: 10px; padding: 5px 12px; margin-bottom: 14px; }
+    .hero h1 { font-size: 28px; margin-bottom: 12px; }
+    .hero-sub { font-size: 15px; margin-bottom: 20px; }
+
+    /* Price card */
+    .price-card { padding: 20px 16px; border-radius: 12px; }
+    .price-new { font-size: 40px; letter-spacing: -1px; }
+    .price-new span { font-size: 20px; }
+    .price-includes { gap: 5px; }
+    .price-tag { font-size: 11px; padding: 4px 10px; }
+    .per-session { font-size: 13px; padding: 7px 12px; }
+
+    /* CTA buttons - bigger tap targets */
+    .cta-btn {
+      padding: 18px 24px;
+      font-size: 15px;
+      border-radius: 14px;
+      max-width: 100%;
+      min-height: 56px;
+    }
+    .cta-wrap { padding: 20px 0 0; }
+
+    /* Social proof bar - stack vertically */
+    .proof-bar {
+      flex-direction: column;
+      gap: 10px;
+      padding: 16px 0;
+    }
+    .proof-item { font-size: 14px; }
+
+    /* Benefits grid - single column on small */
+    .benefit-grid { grid-template-columns: 1fr; gap: 10px; }
+    .benefit-card { padding: 16px; }
+    .benefit-card h3 { font-size: 15px; }
+    .benefit-card p { font-size: 13px; }
+    .benefits-title, .how-title, .comp-title, .test-title, .faq-title { font-size: 22px; }
+    .benefits-sub { font-size: 14px; margin-bottom: 24px; }
+
+    /* Steps */
+    .step { gap: 14px; padding: 16px 0; }
+    .step-num { width: 30px; height: 30px; font-size: 13px; }
+    .step-content h3 { font-size: 15px; }
+    .step-content p { font-size: 13px; }
+
+    /* Comparison table - horizontal scroll */
+    .comparison { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .comp-table { min-width: 340px; font-size: 13px; }
+    .comp-table thead th, .comp-table tbody td { padding: 11px 10px; }
+
+    /* Cost comparison inline styles override */
+    .cost-compare-box p { font-size: 12px !important; }
+
+    /* Testimonials */
+    .test-card { padding: 16px; }
+    .test-text { font-size: 14px; }
+
+    /* FAQ */
+    .faq-q { font-size: 14px; }
+    .faq-a { font-size: 13px; }
+    .faq-item { padding: 16px 0; }
+
+    /* Guarantee */
+    .guarantee { padding: 22px 16px; }
+    .guarantee h3 { font-size: 18px; }
+    .guarantee p { font-size: 13px; }
+
+    /* Trust bar */
+    .trust-bar { gap: 20px; }
+    .trust-item { font-size: 10px; }
+
+    /* Final CTA */
+    .final-cta h2 { font-size: 22px; }
+    .final-cta p { font-size: 14px; }
+
+    /* Footer */
+    .footer { padding: 20px 0; }
+    .footer-info { font-size: 12px; }
+
+    /* Urgency bar */
+    .urgency-bar { font-size: 12px; padding: 6px 0; }
+
+    /* Sticky CTA */
+    .sticky-cta { padding: 10px 12px; }
+    .sticky-cta .cta-btn { min-height: 52px; font-size: 14px; border-radius: 12px; }
+  }
+
+  /* ============ URGENCY ============ */
+  .urgency-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 16px;
+    margin-top: 12px;
+    font-size: 13px;
+    color: #d4738a;
+  }
+  .urgency-dot {
+    width: 8px;
+    height: 8px;
+    background: #d4738a;
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  /* ============ TRUST LOGOS BAR ============ */
+  .trust-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding: 24px 0 8px;
+    flex-wrap: wrap;
+  }
+  .trust-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #555;
+  }
+  .trust-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #141214;
+    border: 1px solid #1e1c1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  /* ============ PER SESSION PRICE ============ */
+  .per-session {
+    display: inline-block;
+    background: rgba(34, 197, 94, 0.08);
+    border: 1px solid rgba(34, 197, 94, 0.15);
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #22c55e;
+    margin-top: 12px;
+  }
+  .per-session strong { font-weight: 700; }
+</style>
+</head>
+<body>
+
+  <!-- ANNOUNCEMENT BAR -->
+  <div class="announcement">
+    BESPLATNE KONZULTACIJE <span>· Saznajte je li diodni laser pravi izbor za vas</span>
+  </div>
+
+  <div class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-badge">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+        Najbolje ocijenjeni estetski centar u Zagrebu
+      </div>
+
+      <h1>Trajno uklanjanje dlačica<br><em>cijelog tijela</em></h1>
+
+      <p class="hero-sub">
+        6 tretmana diodnim laserom. <strong>Jedina metoda koja trajno reducira rast dlačica</strong>. Bez brijanja, bez voska, bez uraslih dlačica.
+      </p>
+
+      <!-- PRICING -->
+      <div class="price-card">
+        <div class="treatment-name">Diodni laser · cijelo tijelo</div>
+        <div class="price-row">
+          <span class="price-new">800 <span>€</span></span>
+        </div>
+        <div class="price-detail">
+          Paket od <strong>6 dolazaka</strong> za kompletnu redukciju
+        </div>
+        <div class="per-session">
+          To je samo <strong>133 € po tretmanu</strong> za cijelo tijelo
+        </div>
+        <div class="price-includes">
+          <span class="price-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Sve zone uključene
+          </span>
+          <span class="price-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Besplatne konzultacije
+          </span>
+          <span class="price-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Certificirani stručnjaci
+          </span>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="cta-wrap">
+        <a href="https://zoyya.com/hr/StudioNice" class="cta-btn" target="_blank" rel="noopener">
+          ZAKAŽI SVOJ TERMIN
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <div class="cta-micro">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Ili nazovite: <a href="tel:+38517077225" style="color:#999;">01 7077 225</a>
+        </div>
+      </div>
+
+      <div class="urgency-bar">
+        <span class="urgency-dot"></span>
+        <span>Trenutno dostupno · ograničen broj termina mjesečno</span>
+      </div>
+    </section>
+
+    <!-- SOCIAL PROOF -->
+    <div class="proof-bar">
+      <div class="proof-item">
+        <span class="stars">★★★★★</span>
+        <span><strong>379</strong> recenzija</span>
+      </div>
+      <div class="proof-item">
+        <span style="color:#d4738a; font-size:18px;">⚕</span>
+        <span>Od <strong>2015.</strong> u Zagrebu</span>
+      </div>
+      <div class="proof-item">
+        <span style="color:#d4738a; font-size:16px;">✓</span>
+        <span><strong>40+</strong> tretmana</span>
+      </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- BENEFITS -->
+    <section class="benefits">
+      <h2 class="benefits-title">Zašto diodni laser?</h2>
+      <p class="benefits-sub">Jedna investicija, trajni rezultati</p>
+
+      <div class="benefit-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon" style="background:rgba(212,115,138,0.1);">⚡</div>
+          <h3>Trajni rezultati</h3>
+          <p>Nakon 6 tretmana, dlačice se trajno reduciraju do 90%. Bez povratka na brijanje ili vosak.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon" style="background:rgba(212,115,138,0.1);">🎯</div>
+          <h3>Preciznost</h3>
+          <p>Diodni laser cilja melanin u korijenu dlake. Okolna koža ostaje neoštećena. Sigurno i za tamnije tipove kože.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon" style="background:rgba(212,115,138,0.1);">🕐</div>
+          <h3>Brzo i bezbolno</h3>
+          <p>Tretman cijelog tijela traje oko sat vremena. Osjećaj blagog peckanja, daleko manje bolno od voska.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon" style="background:rgba(212,115,138,0.1);">🚫</div>
+          <h3>Kraj uraslim dlačicama</h3>
+          <p>Nema iritacije, nema crvenila, nema urastanja. Koža ostaje glatka bez ikakve postradicijske njege.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- HOW IT WORKS -->
+    <section class="how-it-works">
+      <h2 class="how-title">Kako izgleda tretman?</h2>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-line">
+            <div class="step-num">1</div>
+            <div class="step-connector"></div>
+          </div>
+          <div class="step-content">
+            <h3>Besplatne konzultacije</h3>
+            <p>Procjenjujemo tip kože i dlake, odgovaramo na sva pitanja i kreiramo personalizirani plan tretmana.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-line">
+            <div class="step-num">2</div>
+            <div class="step-connector"></div>
+          </div>
+          <div class="step-content">
+            <h3>Priprema kože</h3>
+            <p>Koža se čisti i nanosi se hladni gel koji štiti površinu i poboljšava prodor laserske energije.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-line">
+            <div class="step-num">3</div>
+            <div class="step-connector"></div>
+          </div>
+          <div class="step-content">
+            <h3>Laserski tretman</h3>
+            <p>Uređaj emitira pulseve svjetlosti koji ciljaju folikule dlake. Osjećate blago peckanje. Tretman traje oko 60 minuta za cijelo tijelo.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-line">
+            <div class="step-num">4</div>
+            <div class="step-connector"></div>
+          </div>
+          <div class="step-content">
+            <h3>Njega nakon tretmana</h3>
+            <p>Koža se hladi, nanosimo umirujuću kremu. Izbjegavajte sunce i tople kupke par dana. To je sve.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-line">
+            <div class="step-num">5</div>
+            <div class="step-connector" style="background:transparent;"></div>
+          </div>
+          <div class="step-content">
+            <h3>Ponavljanje svakih 4-6 tjedana</h3>
+            <p>Ukupno 6 tretmana, svaki cilja dlake u drugoj fazi rasta. Nakon zadnjeg tretmana, uživate u trajno glatkoj koži.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- COMPARISON TABLE -->
+    <section class="comparison">
+      <h2 class="comp-title">Zašto ne vosak ili brijanje?</h2>
+
+      <table class="comp-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Diodni laser</th>
+            <th>Vosak</th>
+            <th>Brijanje</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Trajno uklanjanje</td>
+            <td class="check">✓</td>
+            <td class="x">✗</td>
+            <td class="x">✗</td>
+          </tr>
+          <tr>
+            <td>Bez boli</td>
+            <td class="check">✓</td>
+            <td class="x">✗</td>
+            <td class="mid">~</td>
+          </tr>
+          <tr>
+            <td>Bez uraslih dlačica</td>
+            <td class="check">✓</td>
+            <td class="x">✗</td>
+            <td class="x">✗</td>
+          </tr>
+          <tr>
+            <td>Bez iritacije</td>
+            <td class="check">✓</td>
+            <td class="x">✗</td>
+            <td class="x">✗</td>
+          </tr>
+          <tr>
+            <td>Dugoročno jeftinije</td>
+            <td class="check">✓</td>
+            <td class="x">✗</td>
+            <td class="x">✗</td>
+          </tr>
+          <tr>
+            <td>Sve zone tijela</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td class="mid">~</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- COST COMPARISON -->
+      <div style="margin-top:28px; background:#141214; border:1px solid #1e1c1f; border-radius:12px; padding:22px; text-align:center;">
+        <p style="font-size:14px; color:#888; margin-bottom:8px;">Prosječna žena troši na depilaciju voskom:</p>
+        <p style="font-size:28px; font-weight:700; color:#ff6666; margin-bottom:4px;">~€1,800 <span style="font-size:14px; font-weight:400; color:#666;">godišnje</span></p>
+        <p style="font-size:13px; color:#555; margin-bottom:16px;">Svake 3-4 tjedna × 12 mjeseci × cijeli život</p>
+        <div style="height:1px; background:#1e1c1f; margin:16px 0;"></div>
+        <p style="font-size:14px; color:#888; margin-bottom:8px;">Diodni laser · cijelo tijelo, 6 tretmana:</p>
+        <p style="font-size:28px; font-weight:700; color:#22c55e; margin-bottom:4px;">€800 <span style="font-size:14px; font-weight:400; color:#666;">jednokratno</span></p>
+        <p style="font-size:13px; color:#22c55e;">Isplati se već u prvoj godini.</p>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- MID-PAGE CTA -->
+    <div class="text-center" style="padding: 8px 0;">
+      <p style="font-size:15px; color:#888; margin-bottom:20px;">Spremni za trajno glatku kožu?</p>
+      <a href="https://zoyya.com/hr/StudioNice" class="cta-btn" target="_blank" rel="noopener">
+        ZAKAŽI SVOJ TERMIN
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="18" height="18"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <div class="cta-micro">
+        <svg viewBox="0 0 24 24" width="12" height="12"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="#22c55e"/></svg>
+        Besplatne konzultacije, bez obveze
+      </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+      <h2 class="test-title">Što kažu naše klijentice</h2>
+
+      <div class="test-grid">
+        <div class="test-card">
+          <div class="test-stars">★★★★★</div>
+          <p class="test-text">"Nakon trećeg tretmana dlačice su se drastično smanjile. Sad sam na petom i koža mi je potpuno glatka. Jedino žalim što nisam počela ranije. Toliko sam novca bacila na vosak kroz godine."</p>
+          <div class="test-author"><strong>Ivana M.</strong> · klijentica od 2024.</div>
+        </div>
+        <div class="test-card">
+          <div class="test-stars">★★★★★</div>
+          <p class="test-text">"Imala sam ogromne probleme s uraslim dlačicama, pogotovo na nogama. Cure u centru su profesionalne, tretman je brz i gotovo bezbolan. Nakon 6 dolazaka. Totalna razlika."</p>
+          <div class="test-author"><strong>Ana K.</strong> · klijentica od 2023.</div>
+        </div>
+        <div class="test-card">
+          <div class="test-stars">★★★★★</div>
+          <p class="test-text">"Skeptična sam bila jer sam tamnije puti, ali su mi objasnile da diodni laser djeluje i na tamnije tonove kože. Rezultati su odlični, osoblje super ljubazno. Preporučujem svima."</p>
+          <div class="test-author"><strong>Mia R.</strong> · klijentica od 2024.</div>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top:20px;">
+        <p style="font-size:13px; color:#555;">
+          Pridružite se <strong style="color:#d4738a;">379+</strong> zadovoljnih klijentica
+        </p>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- FAQ -->
+    <section class="faq">
+      <h2 class="faq-title">Česta pitanja</h2>
+
+      <div class="faq-item open">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Koliko tretmana treba za trajni rezultat?
+        </div>
+        <div class="faq-a">
+          Paket uključuje 6 tretmana raspoređenih u razmacima od 4-6 tjedana. Svaki tretman cilja dlake u aktivnoj fazi rasta. Nakon 6 dolazaka, postiže se do 90% trajna redukcija dlačica.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Je li tretman bolan?
+        </div>
+        <div class="faq-a">
+          Većina klijentica opisuje osjećaj kao blago peckanje ili "pucketanje gumicom". Daleko manje bolno od depilacije voskom. Koristimo hlađenje kože koje dodatno smanjuje neugodnosti.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Mogu li raditi laser ako imam tamniju put?
+        </div>
+        <div class="faq-a">
+          Da. Diodni laser je siguran za sve tipove kože, uključujući tamnije tonove. Za razliku od IPL-a, diodni laser preciznije cilja melanin u dlaci bez oštećenja okolne kože.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Što uključuje "cijelo tijelo"?
+        </div>
+        <div class="faq-a">
+          Paket cijelog tijela pokriva sve zone: noge, ruke, bikini zona, brazilska depilacija, pazuhe, prsa, leđa, trbuh i lice (po potrebi). Sve je uključeno u cijenu od €800.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Koliko dugo traje jedan tretman?
+        </div>
+        <div class="faq-a">
+          Tretman cijelog tijela traje približno 60 minuta. Manje zone (poput pazuha) mogu se obaviti za 10-15 minuta.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Što ako trebam više od 6 tretmana?
+        </div>
+        <div class="faq-a">
+          Za većinu klijentica 6 tretmana je dovoljno za trajnu redukciju. Ovisno o tipu dlake i hormona, ponekad je potreban dodatni tretman održavanja jednom godišnje. O tome ćemo vas savjetovati na konzultaciji.
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- GUARANTEE -->
+    <div class="guarantee">
+      <div class="guarantee-icon">🛡️</div>
+      <h3>Besplatne konzultacije, bez rizika</h3>
+      <p>Dođite na besplatne konzultacije gdje ćemo procijeniti vašu kožu i tip dlake. Ako diodni laser nije pravi izbor za vas, reći ćemo vam otvoreno. Bez obveze, bez pritiska.</p>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- TRUST BAR -->
+    <div class="trust-bar">
+      <div class="trust-item">
+        <div class="trust-icon">⚕️</div>
+        Certificirano
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🏆</div>
+        379+ recenzija
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">📍</div>
+        Zagreb
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🗓️</div>
+        Od 2015.
+      </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta">
+      <h2>Gotovi s brijanjem <em>zauvijek?</em></h2>
+      <p>Zakažite besplatne konzultacije i saznajte koliko tretmana trebate za trajno glatku kožu.</p>
+
+      <a href="https://zoyya.com/hr/StudioNice" class="cta-btn" target="_blank" rel="noopener">
+        ZAKAŽI BESPLATNE KONZULTACIJE
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="18" height="18"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <div class="cta-micro" style="margin-top:10px;">
+        Ili nazovite direktno: <a href="tel:+38517077225" style="color:#d4738a; font-weight:600;">01 7077 225</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-name">Estetic Centar Nice</div>
+      <div class="footer-info">
+        Barčev trg 6, 10010 Zagreb<br>
+        <a href="tel:+38517077225">+385 (1) 7077 225</a> · <a href="mailto:info@esteticcentarnice.com">info@esteticcentarnice.com</a><br>
+        <a href="https://www.instagram.com/nice_estheticcentar/" target="_blank">Instagram</a> · <a href="https://www.tiktok.com/@estetic.centar.nice" target="_blank">TikTok</a> · <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- STICKY MOBILE CTA -->
+  <div class="sticky-cta" id="stickyCta">
+    <a href="https://zoyya.com/hr/StudioNice" class="cta-btn" target="_blank" rel="noopener">
+      ZAKAŽI TERMIN
+    </a>
+  </div>
+
+  <script>
+    // Show sticky CTA after scrolling past hero
+    const stickyCta = document.getElementById('stickyCta');
+    const heroSection = document.querySelector('.hero');
+    if (stickyCta && heroSection) {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          stickyCta.style.display = entry.isIntersecting ? 'none' : 'block';
+        },
+        { threshold: 0 }
+      );
+      observer.observe(heroSection);
+    }
+  </script>
+
+</body>
+</html>
